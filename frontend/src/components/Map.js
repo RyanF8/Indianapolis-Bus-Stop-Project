@@ -69,7 +69,7 @@ export default function App() {
       } else {
         // Fetch sponsored locations from your backend API
         const sponsorResponse = await fetch(
-          "http://localhost:8080/sponsor/all"
+          `${process.env.REACT_APP_API_URL}/sponsor/all`
         );
         if (!sponsorResponse.ok) {
           throw new Error("Failed to fetch sponsor locations");
