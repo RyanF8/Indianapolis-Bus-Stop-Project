@@ -87,7 +87,6 @@ export default function Auth() {
                 required
               />
             </label>
-         
           </>
          
         ): <div>
